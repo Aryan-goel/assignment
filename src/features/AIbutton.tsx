@@ -12,7 +12,7 @@ export const AIAssistant = ({ onClose = () => {} }) => {
   // Generate response handler
   const handleGenerate = () => {
     if (!isGenerated) {
-      setGeneratedText("Thank you for the opportunity! If you have any more questions or if there's anything else I can help you with, feel free to ask.");
+      setGeneratedText("I just wanted to say a big thank you for the job opportunity at [Company Name]. Im really excited to get started and contribute to the team If theres anything else you need from me, feel free to let me know.Looking forward to working together");
       setIsGenerated(true);
       setUserInput(inputText);
       setInputText("");
