@@ -1,0 +1,24 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx"
+  ],
+  "compilerOptions": {
+     "jsx": "react-jsx", // or "react" for React 17 and below
+    "allowJs": true,    // if you're mixing JS and TS files
+    "esModuleInterop": true, // for proper import/export compatibility
+    "target": "es5",    // or higher like es6
+    "module": "esnext",  // adjust as per your needs
+    "paths": {
+      "~*": [
+        "./src/*"
+      ]
+    },
+    "baseUrl": "."
+  }
+}
